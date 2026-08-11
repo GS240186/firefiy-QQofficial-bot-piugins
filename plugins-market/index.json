@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "generated_by": "gen_market_scaffold.py",
+  "plugins": [
+    {
+      "key": "roll",
+      "name": "Roll 骰子",
+      "description": "发送「roll 100」随机抽 1~N 的整数（默认 100）",
+      "category": "test",
+      "priority": 500,
+      "path": "roll/roll.py",
+      "meta": "roll/meta.json"
+    },
+    {
+      "key": "ping",
+      "name": "Ping 插件",
+      "description": "发送「ping」机器人回「pong」，用于连通性自测",
+      "category": "test",
+      "priority": 500,
+      "path": "ping/ping.py",
+      "meta": "ping/meta.json"
+    },
+    {
+      "key": "demo_echo",
+      "name": "回声插件",
+      "description": "示例外置插件：发送「echo 内容」原样回显",
+      "category": "test",
+      "priority": 500,
+      "path": "demo_echo/demo_echo.py",
+      "meta": "demo_echo/meta.json"
+    }
+  ]
+}

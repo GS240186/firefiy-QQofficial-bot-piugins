@@ -1,0 +1,7 @@
+{
+  "key": "ping",
+  "name": "Ping 插件",
+  "description": "发送「ping」机器人回「pong」，用于连通性自测",
+  "priority": 500,
+  "category": "test"
+}
