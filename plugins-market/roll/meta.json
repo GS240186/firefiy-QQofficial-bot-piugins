@@ -1,7 +1,0 @@
-{
-  "key": "roll",
-  "name": "Roll 骰子",
-  "description": "发送「roll 100」随机抽 1~N 的整数（默认 100）",
-  "priority": 500,
-  "category": "test"
-}

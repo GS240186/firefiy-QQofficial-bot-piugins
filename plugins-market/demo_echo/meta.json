@@ -1,7 +1,0 @@
-{
-  "key": "demo_echo",
-  "name": "回声插件",
-  "description": "示例外置插件：发送「echo 内容」原样回显",
-  "priority": 500,
-  "category": "test"
-}
