@@ -1,7 +1,0 @@
-{
-  "key": "genshin_miao",
-  "name": "原神·M1 聚合",
-  "description": "聚合 miao-plugin 本地数据驱动功能到原神插件（#今日素材 / #五星 / #<角色>技能 / #老婆 等 13 项）",
-  "priority": 400,
-  "category": "game"
-}
