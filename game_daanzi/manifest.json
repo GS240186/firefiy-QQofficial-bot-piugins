@@ -1,0 +1,10 @@
+{
+  "key": "game_daanzi",
+  "name": "娱乐·答案之书",
+  "version": "1.0.0",
+  "priority": 75,
+  "description": "发送「答案之书 问题」占卜答案",
+  "category": "game",
+  "dependencies": [],
+  "author": "小流萤"
+}

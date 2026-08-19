@@ -1,0 +1,10 @@
+{
+  "key": "genshin",
+  "name": "原神面板",
+  "version": "1.0.0",
+  "priority": 500,
+  "description": "原神角色面板渲染（需主项目 lib.genshin_panel_miao）。",
+  "category": "game",
+  "requires_project": true,
+  "author": "小流萤"
+}

@@ -1,0 +1,10 @@
+{
+  "key": "novel",
+  "name": "小说",
+  "version": "1.0.0",
+  "priority": 80,
+  "description": "在线小说阅读",
+  "category": "novel",
+  "dependencies": [],
+  "author": "小流萤"
+}

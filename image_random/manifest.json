@@ -1,0 +1,10 @@
+{
+  "key": "image_random",
+  "name": "图片·随机图库",
+  "version": "1.0.0",
+  "priority": 60,
+  "description": "发送「角色图库/随机图片/看图」查看分类图库",
+  "category": "image",
+  "dependencies": [],
+  "author": "小流萤"
+}

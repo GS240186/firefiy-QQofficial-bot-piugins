@@ -1,0 +1,10 @@
+{
+  "key": "tool_navigation",
+  "name": "工具·导航",
+  "version": "1.0.0",
+  "priority": 20,
+  "description": "发送「导航」查询路线规划",
+  "category": "tool",
+  "dependencies": [],
+  "author": "小流萤"
+}

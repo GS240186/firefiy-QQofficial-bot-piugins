@@ -1,0 +1,10 @@
+{
+  "key": "checkin",
+  "name": "签到",
+  "version": "1.0.0",
+  "priority": 10,
+  "description": "每日签到与积分（签到/签到排名/签到查询/抽奖）",
+  "category": "life",
+  "dependencies": [],
+  "author": "小流萤"
+}

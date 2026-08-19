@@ -1,0 +1,10 @@
+{
+  "key": "video_shuaige",
+  "name": "视频·帅哥",
+  "version": "1.0.0",
+  "priority": 50,
+  "description": "发送「帅哥视频」推送",
+  "category": "video",
+  "dependencies": [],
+  "author": "小流萤"
+}

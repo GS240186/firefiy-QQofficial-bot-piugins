@@ -1,0 +1,10 @@
+{
+  "key": "video_cos",
+  "name": "视频·cos",
+  "version": "1.0.0",
+  "priority": 50,
+  "description": "发送「cos视频」推送",
+  "category": "video",
+  "dependencies": [],
+  "author": "小流萤"
+}

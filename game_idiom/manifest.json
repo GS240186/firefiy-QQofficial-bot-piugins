@@ -1,0 +1,10 @@
+{
+  "key": "game_idiom",
+  "name": "娱乐·看图猜成语",
+  "version": "1.0.0",
+  "priority": 70,
+  "description": "发送「猜成语」看图猜成语（10轮）",
+  "category": "game",
+  "dependencies": [],
+  "author": "小流萤"
+}

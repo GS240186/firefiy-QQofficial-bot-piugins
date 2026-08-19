@@ -1,0 +1,10 @@
+{
+  "key": "tool_disease",
+  "name": "工具·疾病",
+  "version": "1.0.0",
+  "priority": 20,
+  "description": "发送「疾病信息 病名」查疾病",
+  "category": "tool",
+  "dependencies": [],
+  "author": "小流萤"
+}

@@ -1,0 +1,10 @@
+{
+  "key": "wife_today",
+  "name": "今日老婆",
+  "version": "1.0.0",
+  "priority": 500,
+  "description": "每日随机「今日老婆」图片（独立运行 modules.common）。",
+  "category": "fun",
+  "requires_project": false,
+  "author": "小流萤"
+}

@@ -1,0 +1,10 @@
+{
+  "key": "genshin_miao",
+  "name": "原神 Miao 面板",
+  "version": "1.0.0",
+  "priority": 500,
+  "description": "Miao 风格原神面板（需主项目 lib + 本机 Yunzai 资源）。",
+  "category": "game",
+  "requires_project": true,
+  "author": "小流萤"
+}

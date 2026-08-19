@@ -1,0 +1,10 @@
+{
+  "key": "image_acg",
+  "name": "图片·二次元",
+  "version": "1.0.0",
+  "priority": 60,
+  "description": "发送「二次元」随机二次元插画",
+  "category": "image",
+  "dependencies": [],
+  "author": "小流萤"
+}

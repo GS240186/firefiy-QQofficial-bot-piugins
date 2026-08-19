@@ -1,0 +1,10 @@
+{
+  "key": "fun_qa",
+  "name": "趣味问答",
+  "version": "1.0.0",
+  "priority": 500,
+  "description": "趣味问答与脑筋急转弯（独立运行 modules.qa_common）。",
+  "category": "chat",
+  "requires_project": false,
+  "author": "小流萤"
+}

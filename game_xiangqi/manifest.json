@@ -1,0 +1,10 @@
+{
+  "key": "game_xiangqi",
+  "name": "娱乐·中国象棋",
+  "version": "1.0.0",
+  "priority": 72,
+  "description": "发送「象棋」开始对战（AI/双人）",
+  "category": "game",
+  "dependencies": [],
+  "author": "小流萤"
+}

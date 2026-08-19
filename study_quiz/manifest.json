@@ -1,0 +1,10 @@
+{
+  "key": "study_quiz",
+  "name": "学习·知识问答",
+  "version": "1.0.0",
+  "priority": 30,
+  "description": "发送「知识问答」开始答题",
+  "category": "study",
+  "dependencies": [],
+  "author": "小流萤"
+}

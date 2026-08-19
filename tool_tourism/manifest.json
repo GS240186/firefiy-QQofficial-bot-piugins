@@ -1,0 +1,10 @@
+{
+  "key": "tool_tourism",
+  "name": "工具·旅游",
+  "version": "1.0.0",
+  "priority": 20,
+  "description": "发送「旅游 城市」查景点",
+  "category": "tool",
+  "dependencies": [],
+  "author": "小流萤"
+}

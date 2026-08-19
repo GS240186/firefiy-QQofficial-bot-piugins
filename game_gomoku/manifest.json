@@ -1,0 +1,10 @@
+{
+  "key": "game_gomoku",
+  "name": "娱乐·五子棋",
+  "version": "1.0.0",
+  "priority": 71,
+  "description": "发送「五子棋」开始对战（AI/双人）",
+  "category": "game",
+  "dependencies": [],
+  "author": "小流萤"
+}

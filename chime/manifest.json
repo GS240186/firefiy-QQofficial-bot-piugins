@@ -1,0 +1,10 @@
+{
+  "key": "chime",
+  "name": "整点报时",
+  "version": "1.0.0",
+  "priority": 95,
+  "description": "整点报时（报时开关/设置/立即报时）",
+  "category": "admin",
+  "dependencies": [],
+  "author": "小流萤"
+}

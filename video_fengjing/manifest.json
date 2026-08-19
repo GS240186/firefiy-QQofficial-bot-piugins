@@ -1,0 +1,10 @@
+{
+  "key": "video_fengjing",
+  "name": "视频·风景",
+  "version": "1.0.0",
+  "priority": 50,
+  "description": "发送「风景视频」推送",
+  "category": "video",
+  "dependencies": [],
+  "author": "小流萤"
+}

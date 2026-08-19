@@ -1,0 +1,10 @@
+{
+  "key": "image_ys",
+  "name": "图片·原神",
+  "version": "1.0.0",
+  "priority": 60,
+  "description": "发送「原神」原神游戏图",
+  "category": "image",
+  "dependencies": [],
+  "author": "小流萤"
+}

@@ -1,0 +1,10 @@
+{
+  "key": "game_horoscope",
+  "name": "娱乐·今日运势",
+  "version": "1.0.0",
+  "priority": 76,
+  "description": "发送「运势 星座」查询今日运势",
+  "category": "game",
+  "dependencies": [],
+  "author": "小流萤"
+}

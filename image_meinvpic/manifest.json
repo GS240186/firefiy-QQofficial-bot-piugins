@@ -1,0 +1,10 @@
+{
+  "key": "image_meinvpic",
+  "name": "图片·小姐姐",
+  "version": "1.0.0",
+  "priority": 60,
+  "description": "发送「小姐姐」高清美图",
+  "category": "image",
+  "dependencies": [],
+  "author": "小流萤"
+}

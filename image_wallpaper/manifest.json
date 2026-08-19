@@ -1,0 +1,10 @@
+{
+  "key": "image_wallpaper",
+  "name": "图片·风景",
+  "version": "1.0.0",
+  "priority": 60,
+  "description": "发送「风景」随机风景壁纸",
+  "category": "image",
+  "dependencies": [],
+  "author": "小流萤"
+}

@@ -1,0 +1,10 @@
+{
+  "key": "game_qiuqian",
+  "name": "娱乐·观音灵签",
+  "version": "1.0.0",
+  "priority": 73,
+  "description": "发送「求签」抽取观音灵签",
+  "category": "game",
+  "dependencies": [],
+  "author": "小流萤"
+}

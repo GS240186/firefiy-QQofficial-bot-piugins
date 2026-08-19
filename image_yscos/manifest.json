@@ -1,0 +1,10 @@
+{
+  "key": "image_yscos",
+  "name": "图片·原神cos",
+  "version": "1.0.0",
+  "priority": 60,
+  "description": "发送「原神cos」原神cosplay 图片",
+  "category": "image",
+  "dependencies": [],
+  "author": "小流萤"
+}

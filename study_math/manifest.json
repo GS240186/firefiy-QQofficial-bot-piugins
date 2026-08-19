@@ -1,0 +1,10 @@
+{
+  "key": "study_math",
+  "name": "学习·小学数学",
+  "version": "1.0.0",
+  "priority": 30,
+  "description": "发送「小学数学」开始答题",
+  "category": "study",
+  "dependencies": [],
+  "author": "小流萤"
+}

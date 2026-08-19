@@ -1,0 +1,10 @@
+{
+  "key": "music",
+  "name": "音乐",
+  "version": "1.0.0",
+  "priority": 40,
+  "description": "点歌与音乐",
+  "category": "music",
+  "dependencies": [],
+  "author": "小流萤"
+}

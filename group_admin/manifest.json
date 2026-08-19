@@ -1,0 +1,10 @@
+{
+  "key": "group_admin",
+  "name": "群管",
+  "version": "1.0.0",
+  "priority": 90,
+  "description": "群管与入群欢迎",
+  "category": "admin",
+  "dependencies": [],
+  "author": "小流萤"
+}

@@ -1,0 +1,10 @@
+{
+  "key": "video_manjian",
+  "name": "视频·漫剪",
+  "version": "1.0.0",
+  "priority": 50,
+  "description": "发送「漫剪视频」推送",
+  "category": "video",
+  "dependencies": [],
+  "author": "小流萤"
+}

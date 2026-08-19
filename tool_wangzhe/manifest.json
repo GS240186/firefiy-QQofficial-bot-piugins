@@ -1,0 +1,10 @@
+{
+  "key": "tool_wangzhe",
+  "name": "工具·王者",
+  "version": "1.0.0",
+  "priority": 20,
+  "description": "发送「王者 英雄」查英雄信息",
+  "category": "tool",
+  "dependencies": [],
+  "author": "小流萤"
+}

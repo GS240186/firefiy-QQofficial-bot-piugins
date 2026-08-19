@@ -1,0 +1,10 @@
+{
+  "key": "ww_gacha",
+  "name": "鸣潮抽卡模拟",
+  "version": "1.0.0",
+  "priority": 500,
+  "description": "鸣潮风格十连抽卡模拟（独立运行 modules.common + 数据目录）。",
+  "category": "game",
+  "requires_project": false,
+  "author": "小流萤"
+}

@@ -1,0 +1,10 @@
+{
+  "key": "tool_word",
+  "name": "工具·单词",
+  "version": "1.0.0",
+  "priority": 20,
+  "description": "发送「单词 英文」查单词详解",
+  "category": "tool",
+  "dependencies": [],
+  "author": "小流萤"
+}

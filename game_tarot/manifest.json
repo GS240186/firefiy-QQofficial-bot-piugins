@@ -1,0 +1,10 @@
+{
+  "key": "game_tarot",
+  "name": "娱乐·塔罗牌",
+  "version": "1.0.0",
+  "priority": 74,
+  "description": "发送「塔罗牌」抽取塔罗牌",
+  "category": "game",
+  "dependencies": [],
+  "author": "小流萤"
+}

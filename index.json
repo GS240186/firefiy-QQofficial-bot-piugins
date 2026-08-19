@@ -1,0 +1,569 @@
+{
+  "version": 4,
+  "note": "扁平结构：单文件插件 <key>.py + <key>.meta.json 平铺；目录包插件 <key>/ 目录（含 manifest.json + main.py + 可选 assets/）。index.json 含富索引（name/description/category/priority 内联），目录包用 kind=dir + files 字段声明目录内文件列表供远程安装下载。requires_common=true 表示该插件依赖 _common/ 共享库。",
+  "plugins": [
+    {
+      "key": "checkin",
+      "path": "checkin/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "签到",
+      "description": "每日签到与积分（签到/签到排名/签到查询/抽奖）",
+      "category": "life",
+      "priority": 10
+    },
+    {
+      "key": "tool_disease",
+      "path": "tool_disease/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "工具·疾病",
+      "description": "发送「疾病信息 病名」查疾病",
+      "category": "tool",
+      "priority": 20,
+      "requires_common": true
+    },
+    {
+      "key": "tool_navigation",
+      "path": "tool_navigation/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "工具·导航",
+      "description": "发送「导航」查询路线规划",
+      "category": "tool",
+      "priority": 20,
+      "requires_common": true
+    },
+    {
+      "key": "tool_tourism",
+      "path": "tool_tourism/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "工具·旅游",
+      "description": "发送「旅游 城市」查景点",
+      "category": "tool",
+      "priority": 20,
+      "requires_common": true
+    },
+    {
+      "key": "tool_video_parse",
+      "path": "tool_video_parse/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "工具·视频解析",
+      "description": "发送「视频解析」解析无水印视频",
+      "category": "tool",
+      "priority": 20,
+      "requires_common": true
+    },
+    {
+      "key": "tool_wangzhe",
+      "path": "tool_wangzhe/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "工具·王者",
+      "description": "发送「王者 英雄」查英雄信息",
+      "category": "tool",
+      "priority": 20,
+      "requires_common": true
+    },
+    {
+      "key": "tool_waste",
+      "path": "tool_waste/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "工具·垃圾分类",
+      "description": "发送「垃圾分类 垃圾名」查分类",
+      "category": "tool",
+      "priority": 20,
+      "requires_common": true
+    },
+    {
+      "key": "tool_weather",
+      "path": "tool_weather/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "工具·天气",
+      "description": "发送「天气 城市」查询天气",
+      "category": "tool",
+      "priority": 20,
+      "requires_common": true
+    },
+    {
+      "key": "tool_word",
+      "path": "tool_word/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "工具·单词",
+      "description": "发送「单词 英文」查单词详解",
+      "category": "tool",
+      "priority": 20,
+      "requires_common": true
+    },
+    {
+      "key": "study_driving",
+      "path": "study_driving/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "学习·驾考学习",
+      "description": "发送「驾考学习」开始答题",
+      "category": "study",
+      "priority": 30,
+      "requires_common": true
+    },
+    {
+      "key": "study_math",
+      "path": "study_math/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "学习·小学数学",
+      "description": "发送「小学数学」开始答题",
+      "category": "study",
+      "priority": 30,
+      "requires_common": true
+    },
+    {
+      "key": "study_poetry",
+      "path": "study_poetry/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "学习·古诗文",
+      "description": "发送「古诗文 关键词」查诗词",
+      "category": "study",
+      "priority": 30,
+      "requires_common": true
+    },
+    {
+      "key": "study_quiz",
+      "path": "study_quiz/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "学习·知识问答",
+      "description": "发送「知识问答」开始答题",
+      "category": "study",
+      "priority": 30,
+      "requires_common": true
+    },
+    {
+      "key": "music",
+      "path": "music/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "音乐",
+      "description": "点歌与音乐",
+      "category": "music",
+      "priority": 40
+    },
+    {
+      "key": "video_bianzhuang",
+      "path": "video_bianzhuang/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "视频·变装",
+      "description": "发送「变装视频」推送",
+      "category": "video",
+      "priority": 50,
+      "requires_common": true
+    },
+    {
+      "key": "video_cos",
+      "path": "video_cos/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "视频·cos",
+      "description": "发送「cos视频」推送",
+      "category": "video",
+      "priority": 50,
+      "requires_common": true
+    },
+    {
+      "key": "video_fengjing",
+      "path": "video_fengjing/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "视频·风景",
+      "description": "发送「风景视频」推送",
+      "category": "video",
+      "priority": 50,
+      "requires_common": true
+    },
+    {
+      "key": "video_manjian",
+      "path": "video_manjian/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "视频·漫剪",
+      "description": "发送「漫剪视频」推送",
+      "category": "video",
+      "priority": 50,
+      "requires_common": true
+    },
+    {
+      "key": "video_shuaige",
+      "path": "video_shuaige/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "视频·帅哥",
+      "description": "发送「帅哥视频」推送",
+      "category": "video",
+      "priority": 50,
+      "requires_common": true
+    },
+    {
+      "key": "video_youxi",
+      "path": "video_youxi/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "视频·游戏",
+      "description": "发送「游戏视频」推送",
+      "category": "video",
+      "priority": 50,
+      "requires_common": true
+    },
+    {
+      "key": "image_acg",
+      "path": "image_acg/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "图片·二次元",
+      "description": "发送「二次元」随机二次元插画",
+      "category": "image",
+      "priority": 60,
+      "requires_common": true
+    },
+    {
+      "key": "image_bizhi",
+      "path": "image_bizhi/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "图片·壁纸",
+      "description": "发送「随机壁纸」随机壁纸",
+      "category": "image",
+      "priority": 60,
+      "requires_common": true
+    },
+    {
+      "key": "image_meinvpic",
+      "path": "image_meinvpic/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "图片·小姐姐",
+      "description": "发送「小姐姐」高清美图",
+      "category": "image",
+      "priority": 60,
+      "requires_common": true
+    },
+    {
+      "key": "image_random",
+      "path": "image_random/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "图片·随机图库",
+      "description": "发送「角色图库/随机图片/看图」查看分类图库",
+      "category": "image",
+      "priority": 60,
+      "requires_common": true
+    },
+    {
+      "key": "image_wallpaper",
+      "path": "image_wallpaper/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "图片·风景",
+      "description": "发送「风景」随机风景壁纸",
+      "category": "image",
+      "priority": 60,
+      "requires_common": true
+    },
+    {
+      "key": "image_ys",
+      "path": "image_ys/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "图片·原神",
+      "description": "发送「原神」原神游戏图",
+      "category": "image",
+      "priority": 60,
+      "requires_common": true
+    },
+    {
+      "key": "image_yscos",
+      "path": "image_yscos/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "图片·原神cos",
+      "description": "发送「原神cos」原神cosplay 图片",
+      "category": "image",
+      "priority": 60,
+      "requires_common": true
+    },
+    {
+      "key": "game_idiom",
+      "path": "game_idiom/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "娱乐·看图猜成语",
+      "description": "发送「猜成语」看图猜成语（10轮）",
+      "category": "game",
+      "priority": 70,
+      "requires_common": true
+    },
+    {
+      "key": "game_gomoku",
+      "path": "game_gomoku/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "娱乐·五子棋",
+      "description": "发送「五子棋」开始对战（AI/双人）",
+      "category": "game",
+      "priority": 71,
+      "requires_common": true
+    },
+    {
+      "key": "game_xiangqi",
+      "path": "game_xiangqi/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "娱乐·中国象棋",
+      "description": "发送「象棋」开始对战（AI/双人）",
+      "category": "game",
+      "priority": 72,
+      "requires_common": true
+    },
+    {
+      "key": "game_qiuqian",
+      "path": "game_qiuqian/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "娱乐·观音灵签",
+      "description": "发送「求签」抽取观音灵签",
+      "category": "game",
+      "priority": 73,
+      "requires_common": true
+    },
+    {
+      "key": "game_tarot",
+      "path": "game_tarot/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "娱乐·塔罗牌",
+      "description": "发送「塔罗牌」抽取塔罗牌",
+      "category": "game",
+      "priority": 74,
+      "requires_common": true
+    },
+    {
+      "key": "game_daanzi",
+      "path": "game_daanzi/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "娱乐·答案之书",
+      "description": "发送「答案之书 问题」占卜答案",
+      "category": "game",
+      "priority": 75,
+      "requires_common": true
+    },
+    {
+      "key": "game_horoscope",
+      "path": "game_horoscope/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "娱乐·今日运势",
+      "description": "发送「运势 星座」查询今日运势",
+      "category": "game",
+      "priority": 76,
+      "requires_common": true
+    },
+    {
+      "key": "novel",
+      "path": "novel/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "小说",
+      "description": "在线小说阅读",
+      "category": "novel",
+      "priority": 80
+    },
+    {
+      "key": "group_admin",
+      "path": "group_admin/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "群管",
+      "description": "群管与入群欢迎",
+      "category": "admin",
+      "priority": 90
+    },
+    {
+      "key": "chime",
+      "path": "chime/main.py",
+      "kind": "dir",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "name": "整点报时",
+      "description": "整点报时（报时开关/设置/立即报时）",
+      "category": "admin",
+      "priority": 95
+    },
+    {
+      "key": "fun_qa",
+      "path": "fun_qa.py",
+      "name": "趣味问答",
+      "description": "趣味问答与脑筋急转弯（独立运行 modules.qa_common）。",
+      "category": "chat",
+      "priority": 500
+    },
+    {
+      "key": "genshin",
+      "path": "genshin.py",
+      "name": "原神面板",
+      "description": "原神角色面板渲染（需主项目 lib.genshin_panel_miao）。",
+      "category": "game",
+      "priority": 500,
+      "requires_project": true
+    },
+    {
+      "key": "genshin_miao",
+      "path": "genshin_miao.py",
+      "name": "原神 Miao 面板",
+      "description": "Miao 风格原神面板（需主项目 lib + 本机 Yunzai 资源）。",
+      "category": "game",
+      "priority": 500,
+      "requires_project": true
+    },
+    {
+      "key": "starrail",
+      "path": "starrail.py",
+      "name": "星穹铁道面板",
+      "description": "星铁角色面板（独立运行 modules.common）。",
+      "category": "game",
+      "priority": 500
+    },
+    {
+      "key": "wife_today",
+      "path": "wife_today.py",
+      "name": "今日老婆",
+      "description": "每日随机「今日老婆」图片（独立运行 modules.common）。",
+      "category": "fun",
+      "priority": 500
+    },
+    {
+      "key": "ww_gacha",
+      "path": "ww_gacha.py",
+      "name": "鸣潮抽卡模拟",
+      "description": "鸣潮风格十连抽卡模拟（独立运行 modules.common + 数据目录）。",
+      "category": "game",
+      "priority": 500
+    }
+  ]
+}

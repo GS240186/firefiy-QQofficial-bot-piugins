@@ -1,0 +1,10 @@
+{
+  "key": "starrail",
+  "name": "星穹铁道面板",
+  "version": "1.0.0",
+  "priority": 500,
+  "description": "星铁角色面板（独立运行 modules.common）。",
+  "category": "game",
+  "requires_project": false,
+  "author": "小流萤"
+}
