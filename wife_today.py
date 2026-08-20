@@ -18,7 +18,12 @@ PLUGIN = {
     "name": "今日老婆",
     "priority": 500,
     "description": "发送「今日老婆」抽取今日专属二次元老婆（每日固定）",
-    "category": "entertainment",
+    "category": "game",
+    "config_schema": [
+        {"key": "wife_today_enable_history", "type": "bool", "default": False, "label": "是否保存抽取历史"},
+        {"key": "wife_today_refresh_hour", "type": "int", "default": 0, "label": "每日刷新时间（小时）", "min": 0, "max": 23},
+        {"key": "wife_today_show_image", "type": "bool", "default": True, "label": "是否显示图片"},
+    ],
 }
 
 # 默认图库目录已内置到项目 assets/wife，支持通过 data/wife_config.json 覆盖

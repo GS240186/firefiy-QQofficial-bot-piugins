@@ -1,6 +1,6 @@
 {
-  "version": 4,
-  "note": "扁平结构：单文件插件 <key>.py + <key>.meta.json 平铺；目录包插件 <key>/ 目录（含 manifest.json + main.py + 可选 assets/）。index.json 含富索引（name/description/category/priority 内联），目录包用 kind=dir + files 字段声明目录内文件列表供远程安装下载。requires_common=true 表示该插件依赖 _common/ 共享库。",
+  "version": 5,
+  "note": "扁平结构：单文件插件 <key>.py + <key>.meta.json 平铺；目录包插件 <key>/ 目录（含 manifest.json + main.py + 可选 assets/）。index.json 含富索引（name/description/category/priority 内联），目录包用 kind=dir + files 字段声明目录内文件列表供远程安装下载。requires_common=true 表示该插件依赖 _common/ 共享库。fun_qa 已拆分为 fun_brainteaser（脑筋急转弯）和 fun_riddle（猜谜语）两个独立插件。",
   "plugins": [
     {
       "key": "checkin",
@@ -516,10 +516,18 @@
       "priority": 95
     },
     {
-      "key": "fun_qa",
-      "path": "fun_qa.py",
-      "name": "趣味问答",
-      "description": "趣味问答与脑筋急转弯（独立运行 modules.qa_common）。",
+      "key": "fun_brainteaser",
+      "path": "fun_brainteaser.py",
+      "name": "趣味问答·脑筋急转弯",
+      "description": "脑筋急转弯答题游戏（独立运行 modules.qa_common）。触发：脑筋急转弯/急转弯/jzw。",
+      "category": "chat",
+      "priority": 500
+    },
+    {
+      "key": "fun_riddle",
+      "path": "fun_riddle.py",
+      "name": "趣味问答·猜谜语",
+      "description": "猜谜语答题游戏（独立运行 modules.qa_common）。触发：猜谜语/谜语/miyu。",
       "category": "chat",
       "priority": 500
     },

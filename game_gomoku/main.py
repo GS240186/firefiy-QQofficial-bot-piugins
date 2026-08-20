@@ -16,6 +16,11 @@ PLUGIN = {
     "priority": 71,
     "description": "发送「五子棋」开始对战（AI/双人）",
     "category": "game",
+    "config_schema": [
+        {"key": "gomoku_board_size", "type": "int", "default": 15, "label": "棋盘大小", "min": 9, "max": 19},
+        {"key": "gomoku_allow_undo", "type": "bool", "default": True, "label": "是否允许悔棋"},
+        {"key": "gomoku_timeout", "type": "int", "default": 120, "label": "单局超时（秒）", "min": 30, "max": 600},
+    ],
 }
 
 _manager = make_manager()

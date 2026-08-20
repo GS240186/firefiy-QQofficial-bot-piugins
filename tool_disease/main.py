@@ -17,6 +17,11 @@ PLUGIN = {
     "priority": 20,
     "description": "发送「疾病信息 病名」查疾病",
     "category": "tool",
+    "config_schema": [
+        {"key": "disease_enable_history", "type": "bool", "default": False, "label": "是否保存查询历史"},
+        {"key": "disease_timeout", "type": "int", "default": 10, "label": "API 超时（秒）", "min": 1, "max": 60},
+        {"key": "disease_max_results", "type": "int", "default": 10, "label": "搜索结果数", "min": 1, "max": 50},
+    ],
 }
 
 _manager = ToolsManager()

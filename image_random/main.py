@@ -16,6 +16,12 @@ PLUGIN = {
     "priority": 60,
     "description": "发送「角色图库/随机图片/看图」查看分类图库",
     "category": "image",
+    "config_schema": [
+        {"key": "image_random_enable_cache", "type": "bool", "default": False, "label": "是否启用缓存"},
+        {"key": "image_random_cache_ttl", "type": "int", "default": 300, "label": "缓存时间（秒）", "min": 0, "max": 86400},
+        {"key": "image_random_max_retries", "type": "int", "default": 3, "label": "最大重试次数", "min": 0, "max": 10},
+        {"key": "image_random_top_n", "type": "int", "default": 9, "label": "菜单展示分类数", "min": 3, "max": 30},
+    ],
 }
 
 _manager = ImageManager()

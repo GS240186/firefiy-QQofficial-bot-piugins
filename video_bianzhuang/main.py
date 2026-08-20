@@ -16,6 +16,11 @@ PLUGIN = {
     "priority": 50,
     "description": "发送「变装视频」推送",
     "category": "video",
+    "config_schema": [
+        {"key": "video_bianzhuang_enable_cache", "type": "bool", "default": False, "label": "是否启用缓存"},
+        {"key": "video_bianzhuang_cache_ttl", "type": "int", "default": 300, "label": "缓存时间（秒）", "min": 0, "max": 86400},
+        {"key": "video_bianzhuang_max_retries", "type": "int", "default": 3, "label": "最大重试次数", "min": 0, "max": 10},
+    ],
 }
 
 _manager = VideoManager()

@@ -17,6 +17,9 @@ PLUGIN = {
     "priority": 20,
     "description": "发送「旅游 城市」查景点",
     "category": "tool",
+    "config_schema": [
+        {"key": "tourism_timeout", "type": "int", "default": 15, "label": "查询超时（秒）", "min": 1, "max": 60},
+    ],
 }
 
 _manager = ToolsManager()

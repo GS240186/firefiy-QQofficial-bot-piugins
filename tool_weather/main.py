@@ -17,6 +17,10 @@ PLUGIN = {
     "priority": 20,
     "description": "发送「天气 城市」查询天气",
     "category": "tool",
+    "config_schema": [
+        {"key": "weather_unit", "type": "select", "default": "c", "label": "温度单位", "options": ["c", "f"]},
+        {"key": "weather_max_days", "type": "int", "default": 7, "label": "最大预报天数", "min": 1, "max": 15},
+    ],
 }
 
 _manager = ToolsManager()

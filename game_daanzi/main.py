@@ -16,6 +16,9 @@ PLUGIN = {
     "priority": 75,
     "description": "发送「答案之书 问题」占卜答案",
     "category": "game",
+    "config_schema": [
+        {"key": "daanzi_enable_history", "type": "bool", "default": False, "label": "是否保存查询历史"},
+    ],
 }
 
 _manager = make_manager()

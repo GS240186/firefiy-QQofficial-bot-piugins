@@ -17,6 +17,12 @@ PLUGIN = {
     "priority": 20,
     "description": "发送「视频解析」解析无水印视频",
     "category": "tool",
+    "config_schema": [
+        {"key": "video_parse_enable_cache", "type": "bool", "default": False, "label": "是否启用缓存"},
+        {"key": "video_parse_timeout", "type": "int", "default": 60, "label": "解析超时（秒）", "min": 5, "max": 300},
+        {"key": "video_parse_quality", "type": "select", "default": "highest", "label": "画质选择", "options": ["highest", "high", "medium", "low"]},
+        {"key": "video_parse_max_duration", "type": "int", "default": 1200, "label": "最大解析时长（秒）", "min": 60, "max": 7200},
+    ],
 }
 
 _manager = ToolsManager()

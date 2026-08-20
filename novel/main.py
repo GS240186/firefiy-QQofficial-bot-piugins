@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
 """
 小说系统模块（在线版）
@@ -483,6 +483,12 @@ PLUGIN = {
     "priority": 80,
     "description": "在线小说阅读",
     "category": "novel",
+    "config_schema": [
+        {"key": "novel_search_top_n", "type": "int", "default": 10, "label": "搜索结果数", "min": 1, "max": 50},
+        {"key": "novel_enable_render", "type": "bool", "default": True, "label": "是否启用长图渲染"},
+        {"key": "novel_source", "type": "select", "default": "qishuxia", "label": "数据源", "options": ["qishuxia", "biquge", "69shu"]},
+        {"key": "novel_timeout", "type": "int", "default": 30, "label": "搜索超时（秒）", "min": 5, "max": 120},
+    ],
 }
 
 _manager = novel_mgr

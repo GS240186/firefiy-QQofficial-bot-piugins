@@ -18,6 +18,11 @@ PLUGIN = {
     "priority": 30,
     "description": "发送「小学数学」开始答题",
     "category": "study",
+    "config_schema": [
+        {"key": "study_math_enable_ai", "type": "bool", "default": False, "label": "是否启用 AI 出题"},
+        {"key": "study_math_mode", "type": "select", "default": "quiz", "label": "答题模式", "options": ["quiz", "flashcard", "exam"]},
+        {"key": "study_math_timeout", "type": "int", "default": 120, "label": "每题超时（秒）", "min": 10, "max": 600},
+    ],
 }
 
 _manager = StudyManager()

@@ -18,6 +18,9 @@ PLUGIN = {
     "priority": 30,
     "description": "发送「古诗文 关键词」查诗词",
     "category": "study",
+    "config_schema": [
+        {"key": "poetry_enable_history", "type": "bool", "default": False, "label": "是否保存查询历史"},
+    ],
 }
 
 _manager = StudyManager()

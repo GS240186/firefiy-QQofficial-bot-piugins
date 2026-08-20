@@ -16,6 +16,11 @@ PLUGIN = {
     "priority": 60,
     "description": "发送「二次元」随机二次元插画",
     "category": "image",
+    "config_schema": [
+        {"key": "image_acg_enable_cache", "type": "bool", "default": False, "label": "是否启用缓存"},
+        {"key": "image_acg_cache_ttl", "type": "int", "default": 300, "label": "缓存时间（秒）", "min": 0, "max": 86400},
+        {"key": "image_acg_max_retries", "type": "int", "default": 3, "label": "最大重试次数", "min": 0, "max": 10},
+    ],
 }
 
 _manager = ImageManager()

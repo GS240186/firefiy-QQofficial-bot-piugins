@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """
 签到系统模块
 提供每日签到、签到排行榜、签到查询功能。
@@ -410,6 +410,12 @@ PLUGIN = {
     "priority": 10,
     "description": "每日签到与积分",
     "category": "life",
+    "config_schema": [
+        {"key": "checkin_base_points", "type": "int", "default": 10, "label": "签到基础积分", "min": 1, "max": 100},
+        {"key": "checkin_bonus_cap", "type": "int", "default": 200, "label": "连续签到奖励上限", "min": 50, "max": 1000},
+        {"key": "checkin_enable_lottery", "type": "bool", "default": False, "label": "是否开启积分抽奖"},
+        {"key": "checkin_lottery_cost", "type": "int", "default": 50, "label": "单次抽奖消耗积分", "min": 10, "max": 500},
+    ],
 }
 
 _manager = CheckInManager()

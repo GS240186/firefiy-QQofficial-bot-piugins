@@ -16,6 +16,11 @@ PLUGIN = {
     "priority": 60,
     "description": "发送「随机壁纸」随机壁纸",
     "category": "image",
+    "config_schema": [
+        {"key": "image_bizhi_enable_cache", "type": "bool", "default": False, "label": "是否启用缓存"},
+        {"key": "image_bizhi_cache_ttl", "type": "int", "default": 300, "label": "缓存时间（秒）", "min": 0, "max": 86400},
+        {"key": "image_bizhi_max_retries", "type": "int", "default": 3, "label": "最大重试次数", "min": 0, "max": 10},
+    ],
 }
 
 _manager = ImageManager()

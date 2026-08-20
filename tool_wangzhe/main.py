@@ -17,6 +17,10 @@ PLUGIN = {
     "priority": 20,
     "description": "发送「王者 英雄」查英雄信息",
     "category": "tool",
+    "config_schema": [
+        {"key": "wangzhe_default_region", "type": "string", "default": "all", "label": "默认大区"},
+        {"key": "wangzhe_cache_time", "type": "int", "default": 300, "label": "缓存时间（秒）", "min": 0, "max": 3600},
+    ],
 }
 
 _manager = ToolsManager()

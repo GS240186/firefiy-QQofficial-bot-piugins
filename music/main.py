@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """
 音乐系统模块
 以QQ音乐搜索为主引擎，支持多音源切换。
@@ -894,6 +894,11 @@ PLUGIN = {
     "priority": 40,
     "description": "点歌与音乐",
     "category": "music",
+    "config_schema": [
+        {"key": "music_source", "type": "string", "default": "qq", "label": "首选音源"},
+        {"key": "music_max_results", "type": "int", "default": 10, "label": "搜索结果数", "min": 1, "max": 50},
+        {"key": "music_timeout", "type": "int", "default": 30, "label": "搜索超时（秒）", "min": 5, "max": 120},
+    ],
 }
 
 _manager = MusicManager()

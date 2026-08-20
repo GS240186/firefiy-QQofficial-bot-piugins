@@ -16,6 +16,10 @@ PLUGIN = {
     "priority": 72,
     "description": "发送「象棋」开始对战（AI/双人）",
     "category": "game",
+    "config_schema": [
+        {"key": "xiangqi_allow_undo", "type": "bool", "default": True, "label": "是否允许悔棋"},
+        {"key": "xiangqi_timeout", "type": "int", "default": 120, "label": "单局超时（秒）", "min": 30, "max": 600},
+    ],
 }
 
 _manager = make_manager()

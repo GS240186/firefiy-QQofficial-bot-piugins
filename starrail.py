@@ -535,6 +535,11 @@ PLUGIN = {
     "priority": 470,
     "description": "playwright 截 Enka 展柜/角色详情;支持多UID绑定/列表/切换/删除/更新面板/查角色",
     "handle": handle,
+    "config_schema": [
+        {"key": "starrail_enable_panel", "type": "bool", "default": True, "label": "是否启用角色面板"},
+        {"key": "starrail_panel_timeout", "type": "int", "default": 30, "label": "面板查询超时（秒）", "min": 5, "max": 120},
+        {"key": "starrail_max_uids", "type": "int", "default": 3, "label": "单用户最多绑定UID数", "min": 1, "max": 10},
+    ],
 }
 
 # ============ 自包含图片发送辅助（仅依赖 botpy SDK，独立运行无需主项目）============

@@ -16,6 +16,9 @@ PLUGIN = {
     "priority": 76,
     "description": "发送「运势 星座」查询今日运势",
     "category": "game",
+    "config_schema": [
+        {"key": "horoscope_enable_history", "type": "bool", "default": False, "label": "是否保存查询历史"},
+    ],
 }
 
 _manager = make_manager()

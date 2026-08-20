@@ -17,6 +17,11 @@ PLUGIN = {
     "priority": 20,
     "description": "发送「单词 英文」查单词详解",
     "category": "tool",
+    "config_schema": [
+        {"key": "word_daily_limit", "type": "int", "default": 20, "label": "每日学习数", "min": 1, "max": 100},
+        {"key": "word_enable_audio", "type": "bool", "default": True, "label": "是否开启发音"},
+        {"key": "word_difficulty", "type": "string", "default": "auto", "label": "难度等级"},
+    ],
 }
 
 _manager = ToolsManager()

@@ -1,74 +1,72 @@
-# 小流萤插件市场
+# 小流萤 Bot 插件市场仓库
 
-本目录是「小流萤」QQ 机器人的**远程插件仓库内容**，整体上传到 GitHub
-后即作为控制台「插件市场」的远程来源（默认仓库：`GS240186/firefiy-QQofficial-bot-piugins`）。
+为 [小流萤 bot](https://github.com/...) 提供远程插件安装源。
 
-## 结构
+## 仓库地址
+
+- **gitee (主用,国内)**: https://gitee.com/geng-dan/firefiy-qqofficial-bot-piugins/raw/main
+- **GitHub (镜像)**: https://raw.githubusercontent.com/GS240186/firefiy-QQofficial-bot-piugins/main/
+
+## 目录结构
 
 ```
-plugins-market/
-├── index.json              # 市场索引（富索引，含 name/description/category/priority/files）
-├── README.md
-│
-├── ── 单文件插件（kind=file）──
-├── fun_qa.py / .meta.json       # ✅ 独立：内联问答会话，仅依赖 botpy SDK
-├── starrail.py / .meta.json     # ✅ 独立：内联图片发送，仅依赖 botpy SDK
-├── wife_today.py / .meta.json   # ✅ 独立：内联图片发送，仅依赖 botpy SDK
-├── ww_gacha.py / .meta.json     # ✅ 独立：内联图片发送 + ww_gacha_data/ 数据目录
-├── genshin.py / .meta.json      # ⚠️ 需主项目 lib.genshin_panel_miao
-├── genshin_miao.py / .meta.json # ⚠️ 需主项目 lib + 本机 Yunzai 资源
-│
-├── ── 目录包插件（kind=dir，<key>/manifest.json + main.py）──
-├── _common/                     # 🔗 共享库（game_core/image_core/study_core/tools_core/video_core）
-├── checkin/                     # ✅ 独立：签到与积分
-├── chime/                       # ✅ 独立：整点报时
-├── group_admin/                 # ✅ 独立：群管与入群欢迎
-├── music/                       # ✅ 独立：点歌与音乐
-├── novel/                       # ✅ 独立：在线小说阅读
-├── tool_weather/  ... tool_word/    # 🔗 工具×8（依赖 _common）
-├── study_driving/ ... study_quiz/    # 🔗 学习×4（依赖 _common）
-├── image_acg/    ... image_yscos/   # 🔗 图片×7（依赖 _common）
-├── video_bianzhuang/ ... video_youxi/ # 🔗 视频×6（依赖 _common）
-└── game_daanzi/  ... game_horoscope/  # 🔗 娱乐×7（依赖 _common）
+firefiy-qqofficial-bot-piugins/
+├── index.json              # 插件目录索引（43 个插件）
+├── _common/                # 共享库（32 个目录包插件依赖）
+├── <key>/                  # 目录包插件（37 个）
+│   ├── main.py             # 入口
+│   └── manifest.json       # 元数据
+└── <key>.py                # 单文件插件（6 个）
 ```
 
-## 依赖说明
+## 插件统计
 
-| 标记 | 含义 |
-|------|------|
-| ✅ 独立 | 仅依赖 botpy SDK + 标准库，下载即用 |
-| 🔗 依赖 _common | 目录包插件通过 `from _common.xxx import` 引用共享库；安装时自动下载 `_common/` |
-| ⚠️ 需主项目 | 依赖 `lib.genshin_panel_miao` + 本机 Yunzai，无法独立运行 |
+- **总计**: 44 个插件
+- **目录包**: 37 个
+- **单文件**: 7 个
+- **依赖 _common**: 32 个
+- **fun_qa 已拆分**: fun_brainteaser(脑筋急转弯) + fun_riddle(猜谜语)
 
-## index.json 格式
+## 安装到 bot
 
-```json
-{
-  "version": 4,
-  "plugins": [
-    {
-      "key": "tool_weather",
-      "path": "tool_weather/main.py",
-      "kind": "dir",
-      "files": ["main.py", "manifest.json"],
-      "name": "工具·天气",
-      "description": "发送「天气 城市」查询天气",
-      "category": "tool",
-      "priority": 20,
-      "requires_common": true
-    },
-    {
-      "key": "fun_qa",
-      "path": "fun_qa.py",
-      "name": "趣味问答",
-      "category": "chat",
-      "priority": 500
-    }
-  ]
-}
+在 bot 控制台「插件市场」页，配置仓库地址为本仓库的 raw 链接：
+```
+https://gitee.com/geng-dan/firefiy-qqofficial-bot-piugins/raw/main
 ```
 
-- `kind` 省略时自动按 `path` 结尾判断：`/main.py` → `dir`，否则 `file`
-- `files` 列出目录包内所有文件（相对路径），供远程安装逐个下载
-- `requires_common: true` 表示依赖 `_common/` 共享库，安装时自动拉取
-- 富索引内联 `name`/`description`/`category`/`priority`，无需额外请求 meta.json
+然后在插件市场页点击「刷新」即可拉取最新目录。
+
+## 镜像（备份）
+
+- jsDelivr CDN: `https://cdn.jsdelivr.net/gh/GS240186/firefiy-QQofficial-bot-piugins@main/`
+- raw.githubusercontent.com: `https://raw.githubusercontent.com/GS240186/firefiy-QQofficial-bot-piugins/main/`
+
+## 插件分类
+
+| 分类 | 数量 | 说明 |
+|------|------|------|
+| life | 1 | 签到 |
+| tool | 9 | 工具类(疾病/导航/旅游/视频解析/王者/垃圾分类/天气/单词) |
+| study | 4 | 学习类(驾考/数学/古诗文/知识问答) |
+| music | 1 | 音乐 |
+| video | 6 | 视频推送(变装/cos/风景/漫剪/帅哥/游戏) |
+| image | 7 | 图片(二次元/壁纸/小姐姐/随机/风景/原神/原神cos) |
+| game | 7 | 娱乐游戏(成语/五子棋/象棋/求签/塔罗/答案书/运势) |
+| novel | 1 | 小说 |
+| admin | 2 | 群管/整点报时 |
+| chat/fun | 2 | 趣味问答/今日老婆 |
+| game | 3 | 原神/星铁/鸣潮(需主项目) |
+
+## 上传指南
+
+1. 在 gitee 创建仓库 `firefiy-qqofficial-bot-piugins`
+2. 把本目录内容全部上传到仓库根目录
+3. 仓库默认分支设为 `main`
+4. 在 bot 控制台配置仓库地址
+
+## 注意事项
+
+- 每个目录包必须包含 `main.py` 和 `manifest.json`
+- 依赖 `_common` 的插件需要保证 `_common/` 目录已上传
+- 单文件插件以 `<key>.py` 命名,直接放在根目录
+- 修改插件后,bot 端可能因 CDN 缓存需要等待

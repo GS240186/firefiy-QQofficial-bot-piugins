@@ -16,6 +16,10 @@ PLUGIN = {
     "priority": 73,
     "description": "发送「求签」抽取观音灵签",
     "category": "game",
+    "config_schema": [
+        {"key": "qiuqian_pool", "type": "select", "default": "标准签", "label": "签池选择", "options": ["标准签", "扩展签", "全部"]},
+        {"key": "qiuqian_enable_animation", "type": "bool", "default": False, "label": "是否开启动画"},
+    ],
 }
 
 _manager = make_manager()

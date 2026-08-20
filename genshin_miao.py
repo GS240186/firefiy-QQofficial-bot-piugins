@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """
 小流萤 · 原神 M1 主插件 (聚合 miao-plugin 风格本地功能到外置插件)
 触发方式 (双路, 与 miao 风格一致):
@@ -177,6 +177,11 @@ PLUGIN = {
     "name": "原神·M1 聚合",
     "priority": 400,
     "description": "聚合 miao-plugin 本地数据驱动功能到原神插件（#今日素材 / #五星 / #<角色>技能 / #老婆 等 13 项）",
+    "config_schema": [
+        {"key": "genshin_miao_enable_panel", "type": "bool", "default": True, "label": "是否启用角色面板"},
+        {"key": "genshin_miao_panel_timeout", "type": "int", "default": 30, "label": "面板查询超时（秒）", "min": 5, "max": 120},
+        {"key": "genshin_miao_max_skills", "type": "int", "default": 5, "label": "单次查询技能数", "min": 1, "max": 10},
+    ],
 }
 
 

@@ -42,6 +42,11 @@ PLUGIN = {
     "name": "原神查询",
     "priority": 500,
     "description": "原神玩家面板/练度查询 (Enka Network，无需 cookie)；UID 可绑定后下次发角色名直查",
+    "config_schema": [
+        {"key": "genshin_enable_panel", "type": "bool", "default": True, "label": "是否启用角色面板"},
+        {"key": "genshin_panel_timeout", "type": "int", "default": 30, "label": "面板查询超时（秒）", "min": 5, "max": 120},
+        {"key": "genshin_max_uids", "type": "int", "default": 3, "label": "单用户最多绑定UID数", "min": 1, "max": 10},
+    ],
 }
 
 # Enka 镜像列表 (参照 gsuid_core GenshinUID 的 ENKA_API=["enka","microgg"] 双镜像容灾)

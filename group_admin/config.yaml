@@ -1,0 +1,4 @@
+group_admin_mute_on_banword: true
+group_admin_mute_duration: 600
+group_admin_mute_trigger_count: 1
+group_admin_notify_admin: false

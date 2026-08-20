@@ -27,6 +27,13 @@ PLUGIN = {
     "priority": 95,
     "description": "整点报时（报时开关/设置/立即报时），仅群主/管理员可操作",
     "category": "admin",
+    "config_schema": [
+        {"key": "chime_enabled", "type": "bool", "default": False, "label": "是否启用整点报时"},
+        {"key": "chime_interval_hours", "type": "int", "default": 1, "label": "报时间隔（小时）", "min": 1, "max": 24},
+        {"key": "chime_period_start", "type": "int", "default": 0, "label": "开始时段", "min": 0, "max": 23},
+        {"key": "chime_period_end", "type": "int", "default": 23, "label": "结束时段", "min": 0, "max": 23},
+        {"key": "chime_api_url", "type": "string", "default": "https://api.yuafeng.cn/API/ly/time.php", "label": "报时 API 地址"},
+    ],
 }
 
 _CHIME_API_URL = "https://api.yuafeng.cn/API/ly/time.php"

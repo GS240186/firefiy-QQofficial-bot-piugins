@@ -1,0 +1,130 @@
+firefiy-qqofficial-bot-piugins/
+├── index.json                          # 插件市场目录（必须，根目录）
+├── README.md                           # 仓库说明（推荐）
+├── _common/                            # 共享库（依赖此目录的插件：32 个）
+│   ├── __init__.py
+│   ├── http_client.py
+│   ├── image_render.py
+│   ├── text_format.py
+│   ├── message_utils.py
+│   ├── config_loader.py
+│   └── data_manager.py
+│
+├── checkin/                            # 目录包插件（共 37 个目录包）
+│   ├── main.py
+│   └── manifest.json
+├── tool_disease/
+│   ├── main.py
+│   └── manifest.json
+├── tool_navigation/
+│   ├── main.py
+│   └── manifest.json
+├── tool_tourism/
+│   ├── main.py
+│   └── manifest.json
+├── tool_video_parse/
+│   ├── main.py
+│   └── manifest.json
+├── tool_wangzhe/
+│   ├── main.py
+│   └── manifest.json
+├── tool_waste/
+│   ├── main.py
+│   └── manifest.json
+├── tool_weather/
+│   ├── main.py
+│   └── manifest.json
+├── tool_word/
+│   ├── main.py
+│   └── manifest.json
+├── study_driving/
+│   ├── main.py
+│   └── manifest.json
+├── study_math/
+│   ├── main.py
+│   └── manifest.json
+├── study_poetry/
+│   ├── main.py
+│   └── manifest.json
+├── study_quiz/
+│   ├── main.py
+│   └── manifest.json
+├── music/
+│   ├── main.py
+│   └── manifest.json
+├── video_bianzhuang/
+│   ├── main.py
+│   └── manifest.json
+├── video_cos/
+│   ├── main.py
+│   └── manifest.json
+├── video_fengjing/
+│   ├── main.py
+│   └── manifest.json
+├── video_manjian/
+│   ├── main.py
+│   └── manifest.json
+├── video_shuaige/
+│   ├── main.py
+│   └── manifest.json
+├── video_youxi/
+│   ├── main.py
+│   └── manifest.json
+├── image_acg/
+│   ├── main.py
+│   └── manifest.json
+├── image_bizhi/
+│   ├── main.py
+│   └── manifest.json
+├── image_meinvpic/
+│   ├── main.py
+│   └── manifest.json
+├── image_random/
+│   ├── main.py
+│   └── manifest.json
+├── image_wallpaper/
+│   ├── main.py
+│   └── manifest.json
+├── image_ys/
+│   ├── main.py
+│   └── manifest.json
+├── image_yscos/
+│   ├── main.py
+│   └── manifest.json
+├── game_idiom/
+│   ├── main.py
+│   └── manifest.json
+├── game_gomoku/
+│   ├── main.py
+│   └── manifest.json
+├── game_xiangqi/
+│   ├── main.py
+│   └── manifest.json
+├── game_qiuqian/
+│   ├── main.py
+│   └── manifest.json
+├── game_tarot/
+│   ├── main.py
+│   └── manifest.json
+├── game_daanzi/
+│   ├── main.py
+│   └── manifest.json
+├── game_horoscope/
+│   ├── main.py
+│   └── manifest.json
+├── novel/
+│   ├── main.py
+│   └── manifest.json
+├── group_admin/
+│   ├── main.py
+│   └── manifest.json
+├── chime/
+│   ├── main.py
+│   └── manifest.json
+│
+├── fun_qa.py                           # 单文件插件（共 6 个）
+├── genshin.py
+├── genshin_miao.py
+├── starrail.py
+├── wife_today.py
+└── ww_gacha.py

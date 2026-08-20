@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
 import aiohttp
 
@@ -1025,6 +1025,16 @@ class GroupAdminManager:
         is_mute_member_cmd = content.startswith("禁言 ")
         is_unmute_member_cmd = content.startswith("解除禁言 ")
 
+        # ---- 整点报时识别（暂未实现，默认 False） ----
+        is_chime_cmd = False
+        is_chime_toggle_cmd = False
+        is_chime_settings_cmd = False
+        is_chime_interval_cmd = False
+        is_chime_period_cmd = False
+        is_chime_now_cmd = False
+        is_chime_interval_set = False
+        is_chime_period_set = False
+
         if not (is_chime_cmd or is_chime_toggle_cmd or is_chime_settings_cmd
                 or is_chime_interval_cmd or is_chime_period_cmd or is_chime_now_cmd
                 or is_chime_interval_set or is_chime_period_set
@@ -1507,6 +1517,12 @@ PLUGIN = {
     "priority": 90,
     "description": "群管与入群欢迎",
     "category": "admin",
+    "config_schema": [
+        {"key": "group_admin_mute_on_banword", "type": "bool", "default": True, "label": "违禁词是否自动禁言"},
+        {"key": "group_admin_mute_duration", "type": "int", "default": 600, "label": "禁言时长（秒）", "min": 60, "max": 2592000},
+        {"key": "group_admin_mute_trigger_count", "type": "int", "default": 1, "label": "触发禁言的次数阈值", "min": 1, "max": 10},
+        {"key": "group_admin_notify_admin", "type": "bool", "default": True, "label": "触发时是否 @管理员"},
+    ],
 }
 
 _manager = GroupAdminManager()

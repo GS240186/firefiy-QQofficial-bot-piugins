@@ -16,6 +16,11 @@ PLUGIN = {
     "priority": 70,
     "description": "发送「猜成语」看图猜成语（10轮）",
     "category": "game",
+    "config_schema": [
+        {"key": "idiom_rounds", "type": "int", "default": 10, "label": "每局轮数", "min": 1, "max": 50},
+        {"key": "idiom_hint_cost", "type": "int", "default": 1, "label": "提示消耗（积分）", "min": 0, "max": 10},
+        {"key": "idiom_enable_leaderboard", "type": "bool", "default": False, "label": "是否开启排行榜"},
+    ],
 }
 
 _manager = make_manager()

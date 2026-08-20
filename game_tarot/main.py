@@ -16,6 +16,9 @@ PLUGIN = {
     "priority": 74,
     "description": "发送「塔罗牌」抽取塔罗牌",
     "category": "game",
+    "config_schema": [
+        {"key": "tarot_enable_history", "type": "bool", "default": False, "label": "是否保存查询历史"},
+    ],
 }
 
 _manager = make_manager()
